@@ -1,0 +1,63 @@
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+dns.lookup('pluralsight.com', (err,addr) => { console.log(addr) } );
+
+GetAddrInfoReqWrap {
+  callback: [Function],
+  family: 0,
+  hostname: 'pluralsight.com',
+  oncomplete: [Function: onlookup],
+  domain: 
+   Domain {
+     domain: null,
+     _events: 
+      { removeListener: [Function: updateExceptionCapture],
+        newListener: [Function: updateExceptionCapture],
+        error: [Function: debugDomainError] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     members: [] } }
+> 54.213.172.37
+
+
+dns.resolve4('pluralsight.com', (err,addr) => { console.log(addr) });
+
+QueryReqWrap {
+  bindingName: 'queryA',
+  callback: [Function],
+  hostname: 'pluralsight.com',
+  oncomplete: [Function: onresolve],
+  ttl: false,
+  domain: 
+   Domain {
+     domain: null,
+     _events: 
+      { removeListener: [Function: updateExceptionCapture],
+        newListener: [Function: updateExceptionCapture],
+        error: [Function: debugDomainError] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     members: [] },
+  channel: ChannelWrap {} }
+> [ '54.213.172.37' ]
+
+
+> dns.reverse('54.213.172.37', (err,hosts) => {console.log(hosts)})
+QueryReqWrap {
+  bindingName: 'getHostByAddr',
+  callback: [Function],
+  hostname: '54.213.172.37',
+  oncomplete: [Function: onresolve],
+  ttl: false,
+  domain: 
+   Domain {
+     domain: null,
+     _events: 
+      { removeListener: [Function: updateExceptionCapture],
+        newListener: [Function: updateExceptionCapture],
+        error: [Function: debugDomainError] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     members: [] },
+  channel: ChannelWrap {} }
+> [ 'ec2-54-213-172-37.us-west-2.compute.amazonaws.com' ]

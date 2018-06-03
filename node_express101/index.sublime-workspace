@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git: stat",
+				"Git: Status"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 194.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/somjit/Doc and Software/code D/js/JS2017/KyleSimpson PluralSight/Advanced JS/callbacks.js",
+		"/media/somjit/Doc and Software/code D/js/JS2017/node_express101/package.json",
+		"/media/somjit/Doc and Software/code D/js/JS2017/functions/package.json",
+		"/home/somjit/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/somjit/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/M304_whatsNewInMongo/notes.txt",
+		"/var/log/mongodb/mongod.log",
+		"/data/db/mongod.log",
+		"/media/somjit/Doc and Software/pw.txt",
+		"/media/somjit/Doc and Software/office/HT2843-BP.txt",
+		"/media/somjit/Doc and Software/office/UP8253-BP.txt",
+		"/media/somjit/Movies/vagrant_installtion.txt",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/M312: Diagnostics_and_Debugging/handouts/m312-vagrant-env/provision-m312",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/M312: Diagnostics and Debugging/handouts/m312/m312-vagrant-env/provision-m312",
+		"/media/somjit/Doc and Software/code D/js/JS2017/Inheritance/Constructors_and_Prototypes.js",
+		"/media/somjit/Doc and Software/code D/js/JS2017/functions/LamdaDays2017_JohnHughes_lec.js",
+		"/media/somjit/Doc and Software/code D/js/JS2017/functions/JS_patterns_for_2017.js",
+		"/media/somjit/Doc and Software/code D/blockchain/notes.txt",
+		"/media/somjit/CHANDRIMA NEW HDD/Phone backup/Notes/pom room.txt",
+		"/media/somjit/CHANDRIMA NEW HDD/Phone backup/Notes/GMail.txt",
+		"/media/somjit/CHANDRIMA NEW HDD/Phone backup/Notes/cts login.txt",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/M304_whatsNewInMongo/handson/chap01/gist.js",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/LearningMongo/handouts/create_scores.js",
+		"/home/somjit/Desktop/stuff/Goa 2018.txt",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/LearningMongo/handouts/create_scores (copy).js",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/LearningMongo/.gitignore",
+		"/media/somjit/Movies/mongo/JSON/CRUDops/dump/movies.metadata.json",
+		"/media/somjit/Movies/mongo/JSON/CRUDops/dump/moviesScratch.metadata.json",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/.gitignore",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/README.md",
+		"/etc/mongod.conf",
+		"/media/somjit/Doc and Software/code D/mongo/JSON/CRUDops/dump/video/moviesScratch.metadata.json",
+		"/home/somjit/Downloads/contacts.csv",
+		"/media/somjit/Movies/Mongo/log/mongod.log",
+		"/media/somjit/Doc and Software/Mongo/log/mongod.log",
+		"/home/somjit/.cache/.fr-XT0wYB/findAndCursorsInNodeJSDriver/companies.json",
+		"/media/somjit/Doc and Software/linux/.gitignore",
+		"/media/somjit/Doc and Software/code D/js/JS2017/.gitignore",
+		"/media/somjit/Doc and Software/code D/linux and dwa-131.txt",
+		"/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py",
+		"/etc/pulse/client.conf",
+		"/media/somjit/Doc and Software/code D/mongo/JSON/apple_fourth_quarter_news.json",
+		"/media/somjit/Doc and Software/letter to chippy.txt",
+		"/home/somjit/Desktop/tharoor.txt",
+		"/media/somjit/Doc and Software/code D/js/JS2017/functional js/package.json",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/Learning-Bootstrap4/index.html",
+		"/home/somjit/Downloads/RTL8811AU_Linux_v4.3.0_10674.20140321/driver/rtl8811AU_linux_v4.3.0_10674.20140321/clean",
+		"/home/somjit/Downloads/RTL8811AU_Linux_v4.3.0_10674.20140321/install.sh",
+		"/home/somjit/Desktop/pw",
+		"/home/somjit/shotwell-0.24.5/COPYING",
+		"/media/somjit/Doc and Software/code D/java/OfficeTools/MAPPER/DrawerExtract/opFiles/DrawerExtractOp.txt",
+		"/media/somjit/Doc and Software/code D/java/.gitignore",
+		"/media/somjit/Doc and Software/code D/learning bootstrap/Learning-Bootstrap4/project_1_indexv2.html",
+		"/media/somjit/Doc and Software/code D/js/2016/crockford/partial functions.js",
+		"/media/somjit/Doc and Software/code D/js/2016/crockford/arguments array.js",
+		"/media/somjit/Doc and Software/office/MAPPER 2_0/SALES-STOR.txt"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error",
+			"eror",
+			"hotst",
+			"TBS",
+			"multibit-hd-unix-0.x.y.sh",
+			",+$",
+			"self.inputSelector = self.buildDeviceSelect",
+			"self.inputSelector = self.buildDeviceSelect(\"output\", self.inputDeviceList)",
+			"        self.inputSelector = self.buildDeviceSelect(\"output\", self.inputDeviceList)",
+			"mch",
+			"trans",
+			"Possible Translation: ",
+			"Variable Declarations (Static)",
+			"nrd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"multibit-unix-0.5.0.sh"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

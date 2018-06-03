@@ -1,0 +1,5 @@
+EventEmmiter :
+    1. require
+    2. create an EventEmmiter var/class
+    3. emit event from created entity
+    4. catch and process event from a listener

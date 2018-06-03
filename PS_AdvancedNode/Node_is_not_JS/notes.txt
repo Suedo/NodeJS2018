@@ -1,0 +1,121 @@
+node passes callbacks to V8. V8 is single threaded, so only one callback is handled at a time.
+node uses V8 via V8's C++ api.
+node also has some core modules to interact with file system, network, timers etc
+some important libraries used by node:
+    libuv : async IO and eventloop
+    c-ares : async dns name resolver
+    http-parser : parse http
+    zlib : streaming compression etc
+
+--------------------------------------------------------------------------------------------------------------------------
+
+require('some module') stages:
+    1. Resolving: find the abs file path of module
+    2. Loading: content of file at the resolved path
+    3. wrapping: give the module it's own private scope
+    4. Evaluating: VM evaluates the code (core modules are directly evaluated)
+    5. Caching: if required again, don't go through the above 4 steps
+
+$ console.log(module)
+    Module {
+    id: '.',
+    exports: {},
+    parent: null,
+    filename: '/media/somjit/Doc and Software/code D/node/app.js',
+    loaded: false,
+    children: [],
+    paths:
+    [ '/media/somjit/Doc and Software/code D/node/node_modules',
+        '/media/somjit/Doc and Software/code D/node_modules',
+        '/media/somjit/Doc and Software/node_modules',
+        '/media/somjit/node_modules',
+        '/media/node_modules',
+        '/node_modules' ] }
+
+However, my global node modules are stored somewhere else. So how does require get those modules ? : https://nodejs.org/api/all.html#modules_loading_from_the_global_folders
+This is my NODE_PATH: 
+$ node -p "process.env.NODE_PATH"
+    /media/somjit/Doc and Software/GlobalNodeModule/.npm-packages/lib/node_modules
+
+
+package.json:
+    {
+        name: "findme",
+        main: "start.js"
+    }
+
+^^ This will mean that whenever findme.js is required, start.js will be searched and loaded
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Wrapping and Caching:
+
+exports.id = 5  // works
+exports = { id: 1 } // undefined in calling js file
+module.exports = { id: 1 } // works
+
+^^ WHY ??
+because this is what implicitly happens in each module:
+    let exports = module.exports;
+
+    thus, exports get the ref. to the module.exports object. if we do "exports = { id: 1 }" then that reference is lost, and module.exports doesnt get the object.
+    And require returns module exports by default.
+
+Also, code in each file has it's own scope: why?
+because all the code in that file is wrapped inside an IIFE by the compiler. IIFE do not expose their inner scope.
+
+look at 'sayHi.js'
+
+
+Caching is done afet evaluation. 2nd require of the same thing will fetch it from the cache. See 'cacheDemo.js'
+
+--------------------------------------------------------------------------------------------------------------------------
+
+NPM:
+$ npm i express // installs express default
+
+Can install directly from a projects github too:
+$ npm i expressjs/express#4.4.10  // npm i (user)/(repo)#(specific version / branch from master)
+
+npm 'ls' vs 'll':
+
+$ npm ls -g --depth=0
+    /media/somjit/Doc and Software/GlobalNodeModule/.npm-packages/lib
+    +-- @angular/cli@1.6.5
+    +-- body-parser@1.18.2
+    +-- cors@2.8.4
+    +-- express@4.16.2
+    +-- express-generator@4.15.5
+    +-- n@2.1.10
+    `-- nodemon@1.14.12
+
+$ npm ll -g --depth=0
+    /media/somjit/Doc and Software/GlobalNodeModule/.npm-packages/lib
+    +-- @angular/cli@1.6.5
+    |   CLI tool for Angular
+    |   git+https://github.com/angular/angular-cli.git
+    |   https://github.com/angular/angular-cli
+    +-- body-parser@1.18.2
+    |   Node.js body parsing middleware
+    |   git+https://github.com/expressjs/body-parser.git
+    |   https://github.com/expressjs/body-parser#readme
+    +-- cors@2.8.4
+    |   Node.js CORS middleware
+    |   git+https://github.com/expressjs/cors.git
+    |   https://github.com/expressjs/cors#readme
+    +-- express@4.16.2
+    |   Fast, unopinionated, minimalist web framework
+    |   git+https://github.com/expressjs/express.git
+    |   http://expressjs.com/
+    +-- express-generator@4.15.5
+    |   Express' application generator
+    |   git+https://github.com/expressjs/generator.git
+    |   https://github.com/expressjs/generator#readme
+    +-- n@2.1.10
+    |   Interactively Manage All Your Node Versions
+    |   git://github.com/tj/n.git
+    |   https://github.com/tj/n
+    `-- nodemon@1.14.12
+        Simple monitor script for use during development of a node.js app.
+        git+https://github.com/remy/nodemon.git
+        http://nodemon.io

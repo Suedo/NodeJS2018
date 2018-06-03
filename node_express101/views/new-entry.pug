@@ -1,0 +1,16 @@
+include header.pug
+
+  h2 Write a new Header
+  form(method="post" role="form")
+    .form-group
+      label(for="title") Title
+      input#title.form-control(type="text" name="title" placeholder="Entry title" required)
+
+    .form-group
+      label(for="title") Entry Text
+      input#body.form-control(type="text" name="body" placeholder="Love Express" rows="3" required)
+
+    .form-group
+      input.btn.btn-primary(type="submit" value="Post Entry")
+
+include footer.pug
